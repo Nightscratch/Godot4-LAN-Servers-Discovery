@@ -10,19 +10,19 @@ config_version=5
 
 [application]
 
-config/name="UDP broadcasting"
+config/name="servers discovery"
 run/main_scene="res://control.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-LanScan="*res://addons/lan_service_discovery/service_discovery.gd"
-ServiceDiscovery="*res://addons/lan_service_discovery/service_discovery.gd"
+LanScan="*res://addons/lan_servers_discovery/servers_discovery.gd"
+ServiceDiscovery="*res://addons/lan_servers_discovery/servers_discovery.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/lan_service_discovery/plugin.cfg", "res://addons/lansanc/plugin.cfg", "res://addons/lanscan/plugin.cfg")
+enabled=PackedStringArray("res://addons/lan_servers_discovery/plugin.cfg", "res://addons/lan_service_discovery/plugin.cfg", "res://addons/lansanc/plugin.cfg", "res://addons/lanscan/plugin.cfg")
 
 [rendering]
 
